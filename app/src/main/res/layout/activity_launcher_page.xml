@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaunchActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/game_img_launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_space_background">
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/main_animationView"
+        android:layout_width="410dp"
+        android:layout_height="550dp"
+        android:scaleX="1"
+        android:scaleY="3"
+        app:lottie_speed="0.7"
+        android:rotation="-20"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/raw_falling_star"
+        app:lottie_scale="@integer/material_motion_duration_long_1" />
+    </RelativeLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/main_star"
+        android:layout_width="155dp"
+        android:layout_height="165dp"
+        android:scaleY="1.4"
+        android:scaleX="1.4"
+        android:layout_marginTop="175dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-60dp"
+        android:rotationY="180"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/raw_star"
+        app:lottie_speed="2" />
+
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/game_img_title"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/img_musk_concquer_mars3"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ImageView
+        android:id="@+id/game_img_spaceship"
+        android:layout_width="325dp"
+        android:layout_height="325dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-10dp"
+        android:rotation="10"
+        app:srcCompat="@drawable/img_elon_musk_spaceship2" />
+
+
+    <android.widget.Button
+        android:id="@+id/main_BTN_startGame"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/start"
+        android:textSize="27sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/game_img_title"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:onClick="startGame"/>
+
+</RelativeLayout>
