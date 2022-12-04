@@ -110,7 +110,7 @@ public class GManager extends Activity {
 
     public boolean right() {
         int temp = getElonPos();
-        if (getElonPos() >= 0 && getElonPos() < elonPath.length) {
+        if (getElonPos() >= 0 && getElonPos() < elonPath.length-1) {
             nullifyPath(elonPath);
             elonPath[temp + 1] = 1;
         }
