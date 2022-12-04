@@ -176,7 +176,7 @@ public class GameActivity extends AppCompatActivity {
                 gameDisplayBoard[i][j] = findViewById(getResources().getIdentifier("game_img_" + str + i + "" + j, "id", getPackageName()));
                 gameDisplayBoard[i][j].setVisibility(View.INVISIBLE);
             }
-        }
+        }//
 
         String str2 = "elon4";
         elonDisplayPath = new ShapeableImageView[COL];
